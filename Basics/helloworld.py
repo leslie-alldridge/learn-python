@@ -1,4 +1,5 @@
 # basic print
+import re
 print("Hello, World!")
 
 # identation
@@ -233,3 +234,16 @@ if "Jake" in phonebook:
     print("Jake is listed in the phonebook.")
 if "Jill" not in phonebook:
     print("Jill is not listed in the phonebook.")
+
+################
+# module import
+################
+
+
+# Your code goes here
+find_members = []
+for member in dir(re):
+    if "find" in member:
+        find_members.append(member)
+
+print(sorted(find_members))
